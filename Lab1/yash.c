@@ -49,8 +49,6 @@ void put_job_in_foreground (job *j)
     free(i->next);
     i->next = NULL;
   }
-  //dup2(savestdout, STDOUT_FILENO);
-  //close(savestdout);
 }
 
 int main(int argc, char **argv) {
